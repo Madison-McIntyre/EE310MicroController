@@ -1,0 +1,35 @@
+;---------------------
+; Title: ADD TWO BYTES
+;---------------------
+;Program Details:
+; The purpose of this program is to load two bytes, Byte1 (F2H) and Byte2 (02H), in data registers REG0 
+; The program may contain logical errors and should be debugged. Follow the comments and correct the errors
+
+;---------------------
+; Title: Waveform Generator with Delay
+;---------------------
+; Program Details:
+; The purpose of this program is to demonstrate how to call a delay function. 
+
+; Inputs: Inner_loop ,Outer_loop 
+; Outputs: PORTD
+; Date: Feb 24, 2024
+; File Dependencies / Libraries: None 
+; Compiler: xc8, 2.4
+; Author: Madison McIntyre
+; Versions:
+;       V1.4: revised changes for inverting RD0 RD1
+; Useful links: 
+;       Datasheet: https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18(L)F26-27-45-46-47-55-56-57K42-Data-Sheet-40001919G.pdf 
+;       PIC18F Instruction Sets: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119448457.app4 
+;       List of Instrcutions: http://143.110.227.210/faridfarahmand/sonoma/courses/es310/resources/20140217124422790.pdf 
+
+
+
+    
+MOVLW	    45d
+MOVWF	    WREG,0
+MOVLW	    h2d
+MOVWF	    WREG,0
+MOVLW	    00101101b
+MOVWF	    WREG,0
